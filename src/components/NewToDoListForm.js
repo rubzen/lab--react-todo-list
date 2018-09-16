@@ -8,7 +8,7 @@ export default class NewToDoListForm extends Component {
 
     const pending = {
       id: Date.now(),
-      text: this.todoRef.current.value
+      initialtext: this.todoRef.current.value
     };
 
     this.props.onToDo(pending);
@@ -23,10 +23,11 @@ export default class NewToDoListForm extends Component {
         <form onSubmit={this.handleSubmit}>
           <div>
             <div>
-              <label htmlFor="todoList">To Do</label>
+              <label htmlFor="todoList">To Do </label>
               <input id="todoList" ref={this.todoRef} type="text" />
             </div>
           </div>
+          <br />
           <button className="submit-button">+ Add</button>
         </form>
       </div>

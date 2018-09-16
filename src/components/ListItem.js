@@ -11,7 +11,7 @@ export default class ListItem extends Component {
 
     return (
       <li key={pending.id}>
-        {pending.text}
+        {pending.initialtext}
         <button className="remove-button" onClick={this.handleDeleteClick}>
           Delete Item
         </button>
