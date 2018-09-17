@@ -8,12 +8,12 @@ export default class ToDoList extends Component {
 
   render() {
     return (
-      <div className="List">
+      <div className="ToDoList">
         <h2>Pending List</h2>
         {this.props.data.lenght === 0 ? (
-          <p>No Pendings</p>
+          <p>No Pendings :)</p>
         ) : (
-          <ul>
+          <ul className="list-unstyled">
             {this.props.data.map(pending => (
               <li>
                 <input type="checkbox" />

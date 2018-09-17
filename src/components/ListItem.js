@@ -10,12 +10,12 @@ export default class ListItem extends Component {
     const { pending } = this.props;
 
     return (
-      <li key={pending.id}>
+      <ul key={pending.id}>
         {pending.initialtext}
         <button className="remove-button" onClick={this.handleDeleteClick}>
-          Delete Item
+          Borra
         </button>
-      </li>
+      </ul>
     );
   }
 }

@@ -38,9 +38,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">ToDo List</h1>
         </header>
-        <p> - Things what to do any time (better before):</p>
         <div>
           <NewToDoListForm onToDo={this.handleCreatePending} />
         </div>
