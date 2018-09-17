@@ -23,9 +23,8 @@ export default class NewToDoListForm extends Component {
           <div>
             <label htmlFor="todoList">To Do </label>
             <input id="initialtext" ref={this.todoRef} type="text" />
+            <button className="submit-button">+ Add</button>
           </div>
-          <br />
-          <button className="submit-button">+ Add</button>
         </form>
       </div>
     );
