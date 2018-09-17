@@ -9,7 +9,7 @@ class App extends Component {
     allPendings: [
       {
         id: 1,
-        initialtext: "Mandatory complete this activity ",
+        initialtext: "Mandatory complete all activities ",
         check: false
       }
     ]
