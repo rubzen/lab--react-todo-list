@@ -10,11 +10,14 @@ export default class ListItem extends Component {
     const { pending } = this.props;
 
     return (
-      <ul key={pending.id}>
-        {pending.initialtext}
-        <button className="remove-button" onClick={this.handleDeleteClick}>
-          Borra
-        </button>
+      <ul className="list-unstyled" key={pending.id}>
+        <li>
+          <input type="checkbox" />
+          {pending.initialtext}
+          <button className="remove-button" onClick={this.handleDeleteClick}>
+            Delete
+          </button>
+        </li>
       </ul>
     );
   }

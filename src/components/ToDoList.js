@@ -13,16 +13,13 @@ export default class ToDoList extends Component {
         {this.props.data.lenght === 0 ? (
           <p>No Pendings :)</p>
         ) : (
-          <ul className="list-unstyled">
+          <ul>
             {this.props.data.map(pending => (
-              <li>
-                <input type="checkbox" />
-                <ListItem
-                  key={pending.id}
-                  pending={pending}
-                  onDelete={this.handleDeleteListItem}
-                />
-              </li>
+              <ListItem
+                key={pending.id}
+                pending={pending}
+                onDelete={this.handleDeleteListItem}
+              />
             ))}
           </ul>
         )}
